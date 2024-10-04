@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <!-- com.geeksforgeeks.GeekUserDetails
+        is the name of the java class
+        GeekUserDetails is the name of the table -->
+    <class name="com.geeks.GeekUserDetails" table="GeekUserDetails">
+        <id name="geekUserId" type="int" column="geekUserId">
+            <generator class="assigned"/>
+        </id>
+        <property name="geekUsername">
+            <column name="geekUsername"/>
+        </property>
+        <property name="numberOfPosts" type = "int">
+            <column name="numberOfPosts"/>
+        </property>
+        <property name="createdBy">
+            <column name="CREATED_BY"/>
+        </property>
+        <property name="createdDate" type="date">
+            <column name="CREATED_DATE"/>
+        </property>
+    </class>
+</hibernate-mapping>
