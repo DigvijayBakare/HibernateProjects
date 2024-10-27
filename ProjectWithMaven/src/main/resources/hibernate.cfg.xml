@@ -18,7 +18,11 @@
         <!-- Hibernate settings -->
         <property name="hibernate.hbm2ddl.auto">update</property>
         <property name="hibernate.show_sql">true</property>
-        <property name="format_sql">true</property>
+        <property name="format_sql">false</property>
+
+        <!-- Second level cache enabling -->
+        <property name="cache.use_second_level_cache">true</property>
+        <property name="cache.region.factory_class">org.hibernate.cache.ehcache.internal.EhcacheRegionFactory</property>
 
         <!-- Mapping -->
         <mapping class="com.tut.Student" />
@@ -28,5 +32,6 @@
         <mapping class="com.manyToMany.Employee" />
         <mapping class="com.manyToMany.ManyToMany" />
         <mapping class="com.manyToMany.Project" />
+        <mapping resource="Person.hbm.xml" />
     </session-factory>
 </hibernate-configuration>

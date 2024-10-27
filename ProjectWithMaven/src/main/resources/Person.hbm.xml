@@ -7,7 +7,7 @@
 <hibernate-mapping>
     <class name="com.xmlMapping.Person" table="person">
         <id name="id">
-            <generator class="sequence" />
+            <generator class="native" />
         </id>
         <property name="name" type="string" />
         <property name="address" type="string" />

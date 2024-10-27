@@ -8,6 +8,11 @@
       </list>
     </option>
   </component>
+  <component name="ProjectResources">
+    <resource url="http://java.sun.com/dtd/web-app_2_3.dtd" location="$USER_HOME$/AppData/Local/JetBrains/IdeaIC2024.1/extResources/d664ad10_web-app_2_3.dtd" />
+    <resource url="http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd" location="$USER_HOME$/AppData/Local/JetBrains/IdeaIC2024.1/extResources/6ce07d9e_hibernate-configuration-3.0.dtd" />
+    <xml-schema-version>XMLSchema_1_1</xml-schema-version>
+  </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
   </component>

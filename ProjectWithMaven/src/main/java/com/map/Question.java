@@ -13,7 +13,7 @@ public class Question {
 //    @JoinColumn(name = "a_id")
 //    private Answer answer;
 
-    @OneToMany(mappedBy = "question", fetch = FetchType.EAGER)
+    @OneToMany(mappedBy = "question", fetch = FetchType.LAZY, cascade = CascadeType.ALL)
     private List<Answer> answers;
 
     public Question() {
